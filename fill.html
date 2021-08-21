@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="hacker.css">
+    <title>Fill In The Blank</title>
+</head>
+
+<body onload="FillInTheBlank()">
+    <a href="home.html">&#8592 Home</a>
+    <h2>Fill In The Blank</h2>
+    <p><b>Fill in the blank is pretty self-explanatory</b> </p>
+    <div id="puzzle"></div>
+    <div id="userinput">
+        <input placeholder="Enter Answer" id="userGuess" type="text" autocomplete="off">
+        <button id="submitguess" onclick="CheckWord()">Submit</button>
+        <div id="GameResult"></div>
+        <button id="startover" onclick="location.reload()">Start Over</button>
+    </div>
+    <script src="hacker.js"></script>
+</body>
+
+</html>

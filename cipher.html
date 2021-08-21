@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="hacker.css">
+    <title>Decrypt the Cipher</title>
+</head>
+
+<body onload="DecryptCipher()">
+    <a href="home.html">&#8592 Home</a>
+    <h2>Decrypt The Cipher</h2>
+    <p><b>A Caesar Cipher is a type of substitution cipher in which each letter in the plaintext is 'shifted' a certain
+            number of places (shift key) down the alphabet. For example, with a shift of 1, A would be replaced by B, B
+            would become C, and so on.</b> - (http://practicalcryptography.com/ciphers/caesar-cipher/)</p>
+    <div id="puzzle"></div>
+    <div id="userinput">
+        <input placeholder="Enter Answer" id="userGuess" type="text" autocomplete="off">
+        <button id="submitguess" onclick="CheckWord()">Submit</button>
+        <div id="GameResult"></div>
+        <button id="startover" onclick="location.reload()">Start Over</button>
+    </div>
+    <script src="hacker.js"></script>
+</body>
+
+</html>

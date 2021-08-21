@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="hacker.css">
+    <title>Crack The Anagram</title>
+</head>
+
+<body onload="CrackAnagram()">
+    <a href="home.html">&#8592 Home</a>
+    <h2>Crack The Anagram</h2>
+    <p><b>An Anagram is a word or phrase spelled by rearranging the letters of another word or phrase</b> -
+        (https://www.vocabulary.com/dictionary/anagram)</p>
+    <div id="puzzle"></div>
+    <div id="userinput">
+        <input placeholder="Enter Answer" id="userGuess" type="text" autocomplete="off">
+        <button id="submitguess" onclick="CheckWord()">Submit</button>
+        <div id="GameResult"></div>
+        <button id="startover" onclick="location.reload()">Start Over</button>
+    </div>
+    <script src="hacker.js"></script>
+</body>
+
+</html>
